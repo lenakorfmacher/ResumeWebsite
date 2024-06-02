@@ -106,39 +106,6 @@ body {
 }
 
 
-#about {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#about::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/img/uni_mannheim.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  z-index: -1;
-  transform: scale(var(--zoom-scale, 1.1)); /* Initial zoom level */
-  transition: transform 0.1s linear; /* Smooth transition */
-}
-
-
-
-
-
-
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -147,17 +114,31 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* for Bodoni Moda style */
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
 }
 
-h1, .h1 {
+h1, .h1, h2, .h2 {
   font-size: calc(1.725rem + 5.7vw);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: Ms Madi, "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+  /* for Bodoni Moda style */
+  /* font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-style: normal */
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -10872,8 +10853,8 @@ body {
     padding-left: 17rem;
   }
 }
-h1, .h1,
-h2,
+
+/* h2,
 .h2,
 h3,
 .h3,
@@ -10884,7 +10865,7 @@ h5,
 h6,
 .h6 {
   text-transform: uppercase;
-}
+} */
 
 h1, .h1 {
   line-height: 1;
@@ -10896,10 +10877,10 @@ p.lead {
 }
 
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
+  font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* text-transform: uppercase; */
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 #sideNav {
@@ -10981,12 +10962,13 @@ p.lead {
 
 section.resume-section {
   display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  max-width: 75rem;
+  padding: 5rem 1rem; /* Adjust padding as needed */
+  position: relative; /* For absolute positioning of the icon */
+  width: calc(100% - 300px); /* Full width minus navbar width */
+  margin-left: 300px; /* Offset by the width of the navbar */
 }
 section.resume-section .resume-section-content {
   width: 100%;
