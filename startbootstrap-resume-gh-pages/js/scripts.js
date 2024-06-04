@@ -45,3 +45,5 @@ document.addEventListener('scroll', function () {
     // Apply the scale value to the pseudo-element
     aboutSection.style.setProperty('--zoom-scale', scaleValue);
 });
+
+
