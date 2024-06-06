@@ -14,9 +14,9 @@ window.addEventListener('DOMContentLoaded', event => {
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#sideNav',
-            rootMargin: '0px 0px -40%',
+            offset: 100 
         });
-    };
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -32,6 +32,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
 
 // #about - Background image parallax effect
 document.addEventListener('scroll', function () {
