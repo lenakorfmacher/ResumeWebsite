@@ -1,12 +1,16 @@
+
+// Copyright (c) 2024 Lena Korfmacher
+
+// This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (https://creativecommons.org/licenses/by-nc-nd/4.0/).
+// For more information, see the LICENSE file in the root of this repository.
+
 /*!
 * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
-//
-// Scripts
-// 
 
+// Scrollspy - substantial parts taken from Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
@@ -34,7 +38,7 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
-// #about - Background image parallax effect
+// #about - background image parallax effect
 document.addEventListener('scroll', function () {
     const aboutSection = document.getElementById('about');
     const scrollPosition = window.scrollY;
