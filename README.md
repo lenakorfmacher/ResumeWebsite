@@ -11,7 +11,8 @@ To view and navigate the resume website, simply open the `index.html` file in yo
 - [Bootstrap](https://getbootstrap.com/) for the responsive design framework.
 - [Start Bootstrap](https://startbootstrap.com/theme/resume) for the resume template I used as a basis for this work.
 - [Font Awesome](https://fontawesome.com/) for the icons used.
-- [Google Fonts](https://fonts.google.com/) for providing some of the used fonts. 
+- [Google Fonts](https://fonts.google.com/) for providing some of the used fonts.
+- [Pixabay](https://pixabay.com/de/photos/search/netzwerk/) for the title picture. 
 
 ## License
 
