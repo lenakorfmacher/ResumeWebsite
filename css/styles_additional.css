@@ -370,4 +370,75 @@ transition: transform 0.1s linear; /* Smooth transition */
     text-align: right;
 }
 
+/* Cards */
+.card-body {
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  border: solid 1px;
+  border-radius: 7px;
+  padding: 3px 7px;
+  white-space: nowrap;
+  font-weight: 300;
+}
+
+/* Card styles */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%); /* Start hidden */
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.card:hover .card-body {
+  transform: translateY(0); /* Slide up on hover */
+}
+
+.card-title {
+  margin: 0;
+}
+
+/* Ensure the overlay is displayed initially */
+.card:hover .card-overlay,
+.card-body {
+  transform: translateY(0);
+}
+
+@media (hover: none) {
+  .card-body {
+      transform: translateY(0);
+  }
+}
 
