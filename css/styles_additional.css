@@ -401,49 +401,35 @@ html, body {
   overflow: hidden;
 }
 
-.card-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  transition: transform 0.3s ease-in-out;
-  transform: translateY(100%); /* Start hidden */
-}
-
 .card-body.projects {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  top: calc(100% - 2.5rem); /* Initial visible height to show only the h5 element */
+  background: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
   padding: 10px;
-  transform: translateY(100%);
-  transition: transform 0.3s ease-in-out;
+  /* transition: top 0.5s ease-in-out 0.3s; */
   text-align: center;
+  overflow: hidden; /* Hide overflow content */
+  display:flex;
+  flex-direction: column;
 }
 
-.card:hover .card-body {
-  transform: translateY(0); /* Slide up on hover */
+.card:hover .card-body.projects {
+  top: 0; /* Slide up to cover the whole card */
+  justify-content: center;
+}
+
+@media (hover: none) {
+  .card-body.projects {
+    top: 0;
+    justify-content: center;
+  }
 }
 
 .card-title {
   margin: 0;
-}
-
-/* Ensure the overlay is displayed initially */
-.card:hover .card-overlay,
-.card-body {
-  transform: translateY(0);
-}
-
-@media (hover: none) {
-  .card-body {
-      transform: translateY(0);
-  }
 }
 
 footer {
