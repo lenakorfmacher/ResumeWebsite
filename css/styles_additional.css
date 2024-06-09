@@ -84,7 +84,7 @@ section.resume-section {
   justify-content: center; /* Center content vertically */
   align-items: center;
   padding: 5rem 1rem; /* Adjust padding as needed */
-  position: relative; /* For absolute positioning of the icon */
+  position: relative; /* For absolute positioning */
   width: calc(100% - 300px); /* Full width minus navbar width */
   margin-left: 300px; /* Offset by the width of the navbar */
 }
@@ -304,21 +304,21 @@ html, body {
 }
   
 #about::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-image: url('../assets/img/blatt.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-filter: blur(3px);
--webkit-filter: blur(3px);
-z-index: -1;
-transform: scale(var(--zoom-scale, 1.1)); /* Initial zoom level */
-transition: transform 0.1s linear; /* Smooth transition */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/img/blatt.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  z-index: -1;
+  transform: scale(var(--zoom-scale, 1.1)); /* Initial zoom level */
+  transition: transform 0.1s linear; /* Smooth transition */
 }
 
   .next-icons {
@@ -379,10 +379,6 @@ transition: transform 0.1s linear; /* Smooth transition */
 }
 
 /* Cards */
-.card-body {
-  text-align: center;
-}
-
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -418,7 +414,7 @@ transition: transform 0.1s linear; /* Smooth transition */
   transform: translateY(100%); /* Start hidden */
 }
 
-.card-body {
+.card-body.projects {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -449,4 +445,31 @@ transition: transform 0.1s linear; /* Smooth transition */
       transform: translateY(0);
   }
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-left: 300px; /* Offset by the width of the navbar */
+  color:#adb5bd;
+}
+
+@media (max-width: 992px) {
+  footer {
+    margin-left: 0px;
+  }
+}
+
+.name {
+  color:#adb5bd;
+}
+
+footer, .name {
+  font-weight: 200;
+  /* Bodoni Moda style: */
+  font-family: "Helvetica Neue", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
 
