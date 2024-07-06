@@ -27,21 +27,17 @@ body {
 
 .subheading {
   /* font-family: "Helvetica Neue", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  /* text-transform: uppercase; */
   font-weight: 400;
   font-size: 1.3rem;
 }
 
 .place {
-  font-family: "Helvetica Neue", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /* text-transform: uppercase; */
-  font-weight: 500;
+  font-family: "Libre Bodoni", serif, 'Georgia', serif, 'Times New Roman', serif, "Bodoni Moda", serif, "Helvetica Neue", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 100;
   font-size: 1.3rem;
   color: #343a40;
-    /* for Bodoni Moda style */
-    font-family: "Bodoni Moda", serif;
-    font-optical-sizing: auto;
-    font-style: normal
+  font-optical-sizing: auto;
+  font-style: normal
 }
 
 .lead {
@@ -81,10 +77,10 @@ p.lead {
 section.resume-section {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
+  justify-content: center; 
   align-items: center;
-  padding: 5rem 1rem; /* Adjust padding as needed */
-  position: relative; /* For absolute positioning */
+  padding: 5rem 1rem;
+  position: relative;
   width: calc(100% - 300px); /* Full width minus navbar width */
   margin-left: 300px; /* Offset by the width of the navbar */
 }
@@ -126,15 +122,15 @@ hr {
 
 /* Headings */
 h1, .h1 {
-  font-size: calc(1.725rem + 5.7vw);
+  font-size: calc(1.725rem + 5.0vw);
   margin-top: 0;
   margin-bottom: 0.5rem;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  font-weight: 600;
+  font-family: "Libre Bodoni", serif, 'Georgia', serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
   line-height: 1.2;
   color: #343a40;
   /* Bodoni Moda style: */
-  font-family: "Bodoni Moda", serif;
+  /* font-family: "Bodoni Moda", serif; */
   font-optical-sizing: auto;
   font-style: normal
 }
@@ -165,7 +161,7 @@ h2, .h2 {
 
 h3, .h3 {
   /* for Bodoni Moda style */
-  font-family: "Bodoni Moda", serif;
+  font-family: "Libre Bodoni", serif, 'Georgia', serif, "Bodoni Moda", serif;
   font-optical-sizing: auto;
   font-style: normal;
   margin-top: 0;
@@ -373,9 +369,11 @@ html, body {
 }
 
 .timeframe {
-    align-items: right;
-    justify-content: right;
-    text-align: right;
+    /* align-items: left;
+    justify-content: left;
+    text-align: left; */
+    color:#343a40;
+    font-weight: 300;
 }
 
 /* Cards */
@@ -454,7 +452,6 @@ footer {
 
 footer, .name {
   font-weight: 200;
-  /* Bodoni Moda style: */
   font-family: "Helvetica Neue", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
